@@ -3,6 +3,7 @@
 {
   environment.systemPackages = with pkgs; [
     gamescope
+    prismlauncher
   ];
 programs.steam = {
   enable = true;
