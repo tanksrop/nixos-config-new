@@ -18,7 +18,7 @@
       enable_audio_bell = false;
       
       # Tab settings
-      tab_bar_style = "padded-separator";
+      tab_bar_style = "powerline";
       tab_bar_margin_color = "#1e1e2e";
       active_tab_foreground = "#1e1e2e";
       active_tab_background = "#89b4fa";

@@ -25,7 +25,6 @@
     grim
     slurp
     wl-clipboard
-    swaylock
     swayidle
     nautilus
     pulseaudio
@@ -40,7 +39,7 @@
     GDK_SCALE = "1";
     GDK_DPI_SCALE = "1";
     
-    # For better font rendering
-    FONTCONFIG_FILE = "${pkgs.lib.makeFontconfig true pkgs.roboto}";
+    # For better font rendering - remove problematic fontconfig setting
+    # FONTCONFIG_FILE = "${pkgs.lib.makeFontconfig true pkgs.roboto}";
   };
 }

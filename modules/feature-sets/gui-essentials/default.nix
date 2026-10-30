@@ -7,7 +7,6 @@
 
   environment.systemPackages = [
     inputs.zen-browser.packages.${pkgs.stdenv.hostPlatform.system}.default
-    pkgs.ledfx  
 ];
   
 
@@ -15,7 +14,6 @@
     enable = true;
   
     enabledExtensions = with inputs.spicetify-nix.legacyPackages.${pkgs.stdenv.hostPlatform.system}.extensions; [
-      adblockify
       hidePodcasts
       shuffle
     ];
