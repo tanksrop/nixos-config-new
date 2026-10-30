@@ -1,4 +1,4 @@
-{ ... }:
+{ config, pkgs, ... }:
 
 {
   # Add useful system tools for enhanced desktop experience
