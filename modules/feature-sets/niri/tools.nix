@@ -10,7 +10,6 @@
     
     # System monitoring
     htop
-    bpytop
     
     # Image viewing  
     feh
