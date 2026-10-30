@@ -1,5 +1,5 @@
 {
-  description = "just a Nix setup";
+  description = "NixOS configuration";
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
@@ -10,9 +10,10 @@
     spicetify-nix.url = "github:Gerg-L/spicetify-nix";
   };
 
-  outputs = inputs@{ self, nixpkgs, home-manager, zen-browser, ... }:
+  outputs = inputs@{ self, nixpkgs, home-manager, zen-browser, spicetify-nix, ... }:
   let
     system = "x86_64-linux";
+    pkgs = import nixpkgs { inherit system; };
   in
   {
     nixosConfigurations = {
@@ -20,7 +21,7 @@
         inherit system;
 
         specialArgs = {
-          inherit self nixpkgs home-manager zen-browser;
+          inherit self nixpkgs home-manager zen-browser spicetify-nix pkgs;
           inputs = inputs;
         };
 

@@ -4,6 +4,7 @@
   environment.systemPackages = with pkgs; [
     gamescope
     prismlauncher
+    heroic
   ];
 programs.steam = {
   enable = true;

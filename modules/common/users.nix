@@ -5,7 +5,7 @@
 
   users.users.ben = {
     isNormalUser = true;
-    extraGroups = [ "wheel" "networkmanager" ];
+    extraGroups = [ "wheel" "networkmanager" "dialout" ];
     initialPassword = "changeme";
 
     shell = pkgs.fish;
