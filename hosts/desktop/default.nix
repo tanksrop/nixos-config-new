@@ -8,6 +8,9 @@
     home-manager.nixosModules.home-manager
   ];
 
+  # Explicitly set allowUnfree at system level to ensure it's applied
+  nixpkgs.config.allowUnfree = true;
+
   boot.loader.systemd-boot.enable = true;
   boot.loader.systemd-boot.configurationLimit = 30;
   boot.loader.efi.canTouchEfiVariables = true;
