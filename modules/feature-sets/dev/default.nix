@@ -6,7 +6,7 @@
     enable = true;
     package = pkgs.ollama-vulkan;
     environmentVariables = {
-      OLLAMA_CONTEXT_LENGTH = "98304";
+      OLLAMA_CONTEXT_LENGTH = "65536";
     };
   };
   
